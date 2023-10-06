@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-row>
+    <ion-col sizeMd="4" offsetMd="4">
+      <h1 class="ion-text-center ion-margin-vertical ion-padding-vertical"><b>SIGN UP</b></h1>
+      <form class="ion-padding">
+        <div class="ion-margin-vertical">
+          <ion-input type="text" label="Name" labelPlacement="stacked" class="ion-margin-vertical" [(ngModel)]="name" name="name" placeholder="Enter name" required="true"></ion-input>
+        </div>
+        <div class="ion-margin-vertical">
+          <ion-input type="email" label="Email" labelPlacement="stacked" class="ion-margin-vertical" [(ngModel)]="email" name="email" placeholder="Enter email" required="true"></ion-input>
+        </div>
+        <div class="ion-margin-vertical">
+          <ion-input type="password" label="Password" labelPlacement="stacked" class="ion-margin-vertical" [(ngModel)]="password" name="password" placeholder="Enter password" required="true"></ion-input>
+        </div>
+        <div class="ion-margin-vertical">
+          <p>Do you already have an account? <ion-chip color="primary" [routerLink]="['/login']">Log In</ion-chip></p>
+        </div>
+        <div class="ion-margin-vertical">
+          <ion-button mode="ios" expand="block" [disabled]="showSpinner" class="ion-margin-top" color="primary" (click)="nextRole()">Next <ion-icon name="arrow-forward" slot="end" *ngIf="!showSpinner"></ion-icon> <ion-spinner *ngIf="showSpinner" name="lines"></ion-spinner></ion-button>
+        </div>
+      </form>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -38,7 +38,7 @@ El proyecto ya está "compilado", para ver el código "sin compilar" vaya a la c
 /enjs-original/src/app/[folders]
 ```
 ## Ejecutar FrontEnd con Angular "sin compilar"
-Para ejecutar este FrontEnd hecho con Ionic Framework con Angular escriba en la consola desde la raíz del proyecto:
+Para ejecutar o probar este FrontEnd en el navegador hecho con Ionic Framework con Angular escriba en la consola desde la raíz del proyecto:
 ### Instalar Ionic
 ```
 npm install -g @ionic/cli

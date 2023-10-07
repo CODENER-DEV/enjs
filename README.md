@@ -2,7 +2,7 @@
 
 API en la cual se consumiran recursos de películas
 
-## Instalar Node JS
+## Instalar Node JS y NPM
 Descargar la versión mas reciente
 https://nodejs.org/es
 

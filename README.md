@@ -2,6 +2,10 @@
 
 API en la cual se consumiran recursos de películas
 
+## Instalar Node JS
+Descargar la versión mas reciente
+https://nodejs.org/es
+
 ## Instalar y ejecutar BackEnd con Node JS
 Descarga el proyecto
 ```
@@ -10,10 +14,6 @@ $ cd ../path/to/the/file
 $ npm install
 $ npm start
 ```
-
-## Instalar Node JS
-Descargar la versión mas reciente
-https://nodejs.org/es
 
 ### Ejecutar servidor en modo Development
 ```
@@ -37,7 +37,12 @@ Descargar en https://www.mongodb.com/products/tools/compass
 Instalar aplicación y conectarse desde ahí con las credenciales en el archivo .env
 
 ## Ejecutar FrontEnd con Angular "compilado"
-Coloque la carpeta "enjs" en su carpeta con servidor Apache (http) y ejecutar desde ahi index.html o abra la url http://localhost:[port]/enjs y estará corriendo en un navegador Web
+Coloque la carpeta "enjs" en su carpeta "www" con servidor Apache HTTP Server (puede utilizar WampServer o MAMP que incluyen las herramientas necesarias) y ejecutar desde ahi index.html o abra la url http://localhost:[port]/enjs y estará corriendo en un navegador Web.
+Si usted desea colocar la carpeta "enjs" en un "dominio" propio, no olvide registrar el "dominio" sin "https://" en el archivo .env, esto por temas de CORS
+```
+ALTERNATE_CLIENT_DOMAIN=dominio.com
+```
+
 El proyecto ya está "compilado", para ver el código "sin compilar" vaya a la carpeta y archivos:
 ```
 /enjs-original/src/app/[folders]

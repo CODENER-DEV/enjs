@@ -7,8 +7,9 @@ const moviesRoutes = require('./routes/movie.route');
 require('dotenv').config();
 const SERVER_PORT = process.env.SERVER_PORT;
 const CLIENT_PORT = process.env.CLIENT_PORT;
+const ALTERNATE_CLIENT_DOMAIN = process.env.ALTERNATE_CLIENT_DOMAIN;
 const cors = require('cors');
-const whitelist = ['http://localhost', 'http://localhost:80', 'http://localhost:' + SERVER_PORT, 'http://localhost:' + CLIENT_PORT];
+const whitelist = ['http://localhost', 'http://localhost:80', 'http://localhost:' + SERVER_PORT, 'http://localhost:' + CLIENT_PORT, 'https://' + ALTERNATE_CLIENT_DOMAIN];
 
 const corsOptions = {
     origin: function (origin, callback) {

@@ -10,6 +10,11 @@ $ cd ../path/to/the/file
 $ npm install
 $ npm start
 ```
+
+## Instalar Node JS
+Descargar la versión mas reciente
+https://nodejs.org/es
+
 ### Ejecutar servidor en modo Development
 ```
 npm run dev
